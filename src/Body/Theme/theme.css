@@ -1,0 +1,122 @@
+.theme_shadow {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: rgba(175, 173, 173, 0.377);
+}
+
+.darkTheme,
+.lightTheme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.theme_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.theme_side div,
+.theme_main_d div {
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.2rem;
+    color: transparent;
+}
+
+.theme_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+}
+
+.theme_main_d {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    width: 90%;
+    height: 40%;
+    margin: auto;
+}
+
+.lightTheme .theme_main_d,
+.lightTheme .theme_side {
+    background-color: var(--light-verylight);
+}
+
+.lightTheme .theme_side div,
+.lightTheme .theme_main_d div {
+    background-color: var(--light-color);
+}
+
+.darkTheme .theme_main_d,
+.darkTheme .theme_side {
+    background-color: var(--dark-verydark);
+}
+
+.darkTheme .theme_side div,
+.darkTheme .theme_main_d div {
+    background-color: var(--dark-color);
+}
+
+.darkTheme {
+    background-color: var(--dark-dark);
+}
+
+.lightTheme {
+    background-color: var(--light-light);
+}
+
+@media screen and (min-width: 201px) {
+    .main {
+        padding: 1px;
+    }
+
+    .theme {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .theme_shadow {
+        width: 90%;
+    }
+
+    .theme_shadow .blueBtn {
+        font-size: 0.8rem;
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .theme {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .theme_shadow {
+        width: 40%;
+    }
+}
