@@ -1,7 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import PostContext from "../PostContext";
 import TopSidebar from "./Sidebar/TopSidebar";
-import AllLikers from "../AllLikers/AllLikers";
 import Post from "./Post/Post";
 export default function Main() {
     const { people, flowers, activePost } = useContext(PostContext);
@@ -160,7 +159,6 @@ export default function Main() {
                     time="1y"
                     txt="helianthus" />
             </div>
-            <AllLikers />
         </div>
     )
 }
