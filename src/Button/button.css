@@ -1,5 +1,6 @@
 button {
     font-style: italic;
+    text-align: center;
 }
 
 .close {
@@ -11,13 +12,11 @@ button {
 
 .blueBtn,
 .redBtn {
-    width: 70px;
-    height: 30px;
-    text-align: center;
     border: none;
     border-radius: 7px;
     color: var(--light-verylight);
     box-shadow: 0 0 0 2px transparent;
+    padding: 0;
 }
 
 .redBtn {
@@ -45,15 +44,65 @@ button {
     text-transform: capitalize;
 }
 
-.offcanvasToggle {
-    width: 45px;
-    height: 45px;
-    border: none;
-    background: url("../img/svgs/bs-toggle.svg") no-repeat center;
+@media screen and (max-width: 200px) {
+
+    .blueBtn,
+    .redBtn {
+        width: 35px;
+        height: 20px;
+        font-size: xx-small;
+    }
+}
+
+@media screen and (min-width: 201px) {
+
+    .blueBtn,
+    .redBtn {
+        width: 35px;
+        height: 20px;
+        font-size: xx-small;
+    }
+}
+
+@media screen and (min-width:320px) {
+
+    .blueBtn,
+    .redBtn {
+        width: 45px;
+        height: 25px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:480px) {
+
+    .blueBtn,
+    .redBtn {
+        width: 55px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .blueBtn,
+    .redBtn {
+        width: 65px;
+        height: 30px;
+        font-size: 0.92rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .offcanvasToggle {
         display: none;
+    }
+
+    .blueBtn,
+    .redBtn {
+        width: 70px;
+        height: 30px;
+        font-size: 0.97rem;
     }
 }
