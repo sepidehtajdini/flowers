@@ -2,6 +2,7 @@ import { useRef, useState, useContext } from "react";
 import PostContext from "../PostContext";
 import Button from "../Button/Button";
 import { ReactComponent as Search } from "../img/svgs/search.svg";
+import { ReactComponent as NavBtn } from "../img/svgs/toggle.svg";
 import "./header.css";
 export default function Header() {
     const inp = useRef();
@@ -14,10 +15,10 @@ export default function Header() {
         }
     }
     return (
-        <div className={theme === "light" ? "light_header header" : "dark_header header"}>
-            <div style={{display:"flex"}}>
-                <Button
-                    btnClass="offcanvasToggle"
+        <div className={theme === "light_theme" ? "light header" : "dark header"}>
+            <div style={{ display: "flex" }}>
+                <NavBtn
+                    className="offcanvasToggle"
                     onClick={() => setOffcanvasDisplay(true)} />
 
                 <div className="header_title">Flowers</div>
