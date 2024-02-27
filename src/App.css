@@ -28,70 +28,23 @@ body {
     display: none;
 }
 
-.dark {
+.dark_theme {
     background-color: var(--dark-dark);
     color: var(--dark-color);
 }
 
-.light {
+.light_theme {
     background-color: var(--light-light);
     color: var(--light-color);
 }
 
-/* .dokme {
-    position: relative;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background: darkblue;
+.dark {
+    background-color: var(--dark-verydark);
+    color: var(--dark-color);
+    text-shadow: 2px 1px 1px black;
 }
 
-.text {
-    display: block;
-    padding: 5px 10px;
+.light {
+    background-color: var(--light-verylight);
+    color: var(--light-color);
 }
-
-.dokme::before,
-.dokme::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    position: absolute;
-    transition: all 0.6s ease-out;
-    background: turquoise;
-}
-
-.text::before,
-.text::after {
-    content: "";
-    width: 2px;
-    height: 0;
-    position: absolute;
-    transition: all 0.6s ease-out;
-    border-radius: 50%;
-    background: turquoise;
-}
-
-.dokme:hover::before,
-.dokme:hover::after {
-    width: 100%;
-}
-
-.dokme:hover .text::before,
-.dokme:hover .text::after {
-    height: 100%;
-}
-
-.dokme::after,
-.dokme .text::after {
-    right: 0;
-    bottom: 0;
-    transition-duration: 0.4s;
-}
-
-.dokme::before,
-.dokme .text::before {
-    left: 0;
-    top: 0;
-    transition-duration: 0.6s;
-} */

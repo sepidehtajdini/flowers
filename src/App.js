@@ -60,14 +60,14 @@ import "./App.css";
 export default function App() {
     const [selectedBtn, setSelectedBtn] = useState("home");
     const [showAllLikers, setShowAllLikers] = useState(false);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("light_theme");
     const [activePost, setActivePost] = useState("");
     const [offcanvasDisplay, setOffcanvasDisplay] = useState(false);
     const [profileShow, setProfileShow] = useState(false);
     const people = {
         angelina: { id: "angelinajolie", src: { angelina } },
-        bradley: { id: "bradleycooperofficial", src: { bradley } },
-        jack: { id: "jacknicholsonofficial", src: { jack } },
+        bradley: { id: "bradleycooper", src: { bradley } },
+        jack: { id: "jacknicholson", src: { jack } },
         jennifer: { id: "jeni_a50", src: { jennifer } },
         judy: { id: "judy4554", src: { judy } },
         alice: { id: "alice_seger", src: { alice } },
