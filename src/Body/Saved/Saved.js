@@ -3,18 +3,22 @@ import { useContext } from "react";
 import PostContext from "../../PostContext";
 import "./saved.css";
 export default function Saved() {
-    const { flowers, setActivePost, setSelectedBtn } = useContext(PostContext);
+    const { flowers, setActivePost, setSelectedBtn, theme } = useContext(PostContext);
     const navigate = useNavigate();
     return (
         <div className="main">
             <h3>Saved posts</h3>
             <div className="first_div">
                 <div className="saved_row">
-                    <div className="saved_category">
+                    <div className={theme === "light_theme"
+                        ? "saved_category light_saved_category"
+                        : "saved_category dark_saved_category"}>
                         <h5>Roses</h5>
                         <div className="category_row">
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("home");
                                     navigate(`/home`);
@@ -24,16 +28,19 @@ export default function Saved() {
                                 <img src={flowers.rose.color.red.src.redRose}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 White
                                 <img src={flowers.rose.color.white.src.whiteRose}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                         </div>
                         <div className="category_row">
-
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("explore");
                                     navigate(`/explore`);
@@ -43,30 +50,40 @@ export default function Saved() {
                                 <img src={flowers.rose.color.black.src.blackRose}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Pink
                                 <img src={flowers.rose.color.pink.src.pinkRose}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                         </div>
                         <div className="category_row">
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Orange
                                 <img src={flowers.rose.color.orange.src.orangeRose}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                         </div>
                     </div>
-                    <div className="saved_category">
+                    <div className={theme === "light_theme"
+                        ? "saved_category light_saved_category"
+                        : "saved_category dark_saved_category"}>
                         <h5>Alstroemerias</h5>
                         <div className="category_row">
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Red
                                 <img src={flowers.alstroemeria.color.red.src.redAlstroemeria}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("explore");
                                     navigate(`/explore`);
@@ -78,13 +95,17 @@ export default function Saved() {
                             </div>
                         </div>
                         <div className="category_row">
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Yellow
                                 <img src={flowers.alstroemeria.color.yellow.src.yellowAlstroemeria}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("home");
                                     navigate(`/home`);
@@ -100,11 +121,15 @@ export default function Saved() {
             </div>
             <div className="first_div">
                 <div className="saved_row">
-                    <div className="saved_category">
+                    <div className={theme === "light_theme"
+                        ? "saved_category light_saved_category"
+                        : "saved_category dark_saved_category"}>
                         <h5>Narcissus</h5>
                         <div className="category_row">
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={
                                     () => {
                                         setSelectedBtn("home");
@@ -115,19 +140,25 @@ export default function Saved() {
                                 <img src={flowers.narcissus.color.white.src.whiteNarcissus}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Yellow
                                 <img src={flowers.narcissus.color.yellow.src.yellowNarcissus}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                         </div>
                     </div>
-                    <div className="saved_category">
+                    <div className={theme === "light_theme"
+                        ? "saved_category light_saved_category"
+                        : "saved_category dark_saved_category"}>
                         <h5>Liliums</h5>
                         <div
                             className="category_row">
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("explore");
                                     navigate(`/explore`);
@@ -138,7 +169,9 @@ export default function Saved() {
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
                             <div
-                                className="category_item"
+                                className={theme === "light_theme"
+                                    ? "category_item light_category_item"
+                                    : "category_item dark_category_item"}
                                 onClick={() => {
                                     setSelectedBtn("home");
                                     navigate(`/home`);
@@ -150,12 +183,16 @@ export default function Saved() {
                             </div>
                         </div>
                         <div className="category_row">
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Yellow
                                 <img src={flowers.lilium.color.yellow.src.yellowLilium}
                                     alt="flower" className="category_item_img" loading="lazy" />
                             </div>
-                            <div className="category_item">
+                            <div className={theme === "light_theme"
+                                ? "category_item light_category_item"
+                                : "category_item dark_category_item"}>
                                 Orange
                                 <img src={flowers.lilium.color.orange.src.orangeLilium}
                                     alt="flower" className="category_item_img" loading="lazy" />
