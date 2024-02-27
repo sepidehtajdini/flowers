@@ -10,7 +10,7 @@ export default function Theme() {
             <div className="first_div theme">
                 <div className="theme_shadow">
                     dark
-                    <div className="darkTheme">
+                    <div className="darkThemeSchema">
                         <div className="theme_side">
                             <div>text test txt</div>
                             <div>text test txt</div>
@@ -31,11 +31,11 @@ export default function Theme() {
                     <Button
                         btnClass="blueBtn"
                         txt="Set"
-                        onClick={() => setTheme("dark")} />
+                        onClick={() => setTheme("dark_theme")} />
                 </div>
                 <div className="theme_shadow">
                     light
-                    <div className="lightTheme">
+                    <div className="lightThemeSchema">
                         <div className="theme_side">
                             <div>text test txt</div>
                             <div>text test txt</div>
@@ -56,7 +56,7 @@ export default function Theme() {
                     <Button
                         btnClass="blueBtn"
                         txt="Set"
-                        onClick={() => setTheme("light")}
+                        onClick={() => setTheme("light_theme")}
                     />
                 </div>
             </div>
