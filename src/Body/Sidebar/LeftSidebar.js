@@ -14,7 +14,7 @@ export default function LeftSidebar() {
     const { selectedBtn, setSelectedBtn, people, theme } = useContext(PostContext);
     return (
         <div className={theme + " leftSidebar"}>
-            <div className={theme === "light"
+            <div className={theme === "light_theme"
                 ? "light_leftSidebar leftSidebar_profile"
                 : "dark_leftSidebar leftSidebar_profile"}>
                 <div className="leftSidebar_profile_pic">
@@ -25,7 +25,7 @@ export default function LeftSidebar() {
                     <div className="username">jen.a50</div>
                 </div>
             </div>
-            <div className={theme === "light"
+            <div className={theme === "light_theme"
                 ? "light_leftSidebar leftSidebar_menu"
                 : "dark_leftSidebar leftSidebar_menu"}>
                 <div
